@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <title>Calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <div id="container">
+    <div id="display">
+      <div data-prevOperations id="prev-operand">
 
+      </div>
+      <div data-currentOperations id="current-operand">
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </div>
+    <div id="keyboard">
+      <button data-number value="7">7</button>
+      <button data-number value="8">8</button>
+      <button data-number value="9">9</button>
+      <button data-delete>DEL</button>
+      <button data-number value="4">4</button>
+      <button data-number value="5">5</button>
+      <button data-number value="6">6</button>
+      <button data-operand value="+">+</button>
+      <button data-number value="1">1</button>
+      <button data-number value="2">2</button>
+      <button data-number value="3">3</button>
+      <button data-operand value="-">-</button>
+      <button data-number value=".">.</button>
+      <button data-number value="0">0</button>
+      <button data-operand value="/">/</button>
+      <button data-operand value="*">*</button>
+      <button data-clear class="col-span-2">AC</button>
+      <button data-equal class="col-span-2">=</button>
+    </div>
   </div>
 </body>
+
 </html>
